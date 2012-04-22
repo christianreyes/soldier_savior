@@ -38,6 +38,14 @@ Servo Servo6;                                                 // define servos
 TinyGPS gps;
 SoftwareSerial ss(gps_rx, gps_tx);
 
+float mlat = 0.0;
+float mlon = 0.0;
+float tlat = 0.0;
+float tlon = 0.0;
+
+char inData[80];
+byte index = 0;
+
 void setup()
 {
   //------------------------------------------------------------ Initialize Servos ----------------------------------------------------
@@ -71,8 +79,50 @@ void setup()
 void loop()
 {
   voltage_check();   //-------- Check battery voltage and current draw of motors ------
-  get_gps();
+  get_gps();         // update vehicle's GPS location
+  processSerial();   // process incoming serial data
   move_vehicle();    //-------- Move vehicle if charged
+}
+
+void processSerial(){
+  while(Serial.available() > 0) {
+    char aChar = Serial.read();
+    if(aChar == '\n') {
+      // End of message detected. Time to parse
+      if(String(inData).indexOf("!") != -1){
+        Serial.println("SAFE!");  
+      } else {
+       
+        char *p = inData; 
+        char *str;
+      
+        int counter = 0; 
+           
+        while (str = strtok_r(p, ",", &p)){
+          if(counter == 0){
+            tlat = atof(str);
+            counter = 1;
+          } else {
+            tlon = atof(str);
+            counter = 0;
+          }
+        } 
+      
+        Serial.print("TLat: ");
+        Serial.print(tlat, 10);
+        Serial.print(" TLon: ");
+        Serial.println(tlon, 10);
+      }
+      
+      index = 0;
+      inData[index] = NULL;
+    } 
+    else { // keep reading in the characters from incoming serial
+      inData[index] = aChar;
+      index++;
+      inData[index] = '\0'; // Keep the string NULL terminated
+    }
+  }
 }
 
 void get_gps(){
@@ -92,12 +142,12 @@ void get_gps(){
 
   if (newData)
   {
-    float flat, flon;
     unsigned long age;
-    gps.f_get_position(&flat, &flon, &age);
-    Serial.print(flat, 10);
-    Serial.print(",");
-    Serial.println(flon,10);
+    gps.f_get_position(&mlat, &mlon, &age);
+    
+    //Serial.print(mylat, 10);
+    //Serial.print(",");
+    //Serial.println(mylon,10);
   }
 }
 
