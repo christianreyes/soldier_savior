@@ -15,7 +15,10 @@
 #define S5                 10  // Servo output 05
 #define S6                 12  // Servo output 06
 
-#define Battery             A0  // Analog input 00
-#define RmotorC             A6  // Analog input 06
-#define LmotorC             A7  // Analog input 07
-#define Charger             13  // Low=ON High=OFF
+#define gps_tx             A1  // Servo output 05
+#define gps_rx             A2  // Servo output 06
+
+#define Battery            A0  // Analog input 00
+#define RmotorC            A6  // Analog input 06
+#define LmotorC            A7  // Analog input 07
+#define Charger            13  // Low=ON High=OFF

@@ -1,7 +1,8 @@
 #include <Servo.h>
 #include "IOpins.h"
 #include "Constants.h"
-
+#include <SoftwareSerial.h>
+#include "TinyGPS.h"
 
 //-------------------------------------------------------------- define global variables --------------------------------------------
 
@@ -38,6 +39,11 @@ Servo Servo4;                                                 // define servos
 Servo Servo5;                                                 // define servos
 Servo Servo6;                                                 // define servos
 
+//-------------------------------------------------------------- define GPS ------------------------------------------------------
+
+TinyGPS gps;
+SoftwareSerial ss(gps_rx, gps_tx);
+
 void setup()
 {
   //------------------------------------------------------------ Initialize Servos ----------------------------------------------------
@@ -64,12 +70,41 @@ void setup()
 
   Serial.begin(Brate);                                      // enable serial communications if Cmode=1
   Serial.println("I AM ALIVE!");
+  
+  ss.begin(4800);  // start GPS communication
 }
 
 void loop()
 {
   voltage_check();   //-------- Check battery voltage and current draw of motors ------
+  get_gps();
   move_vehicle();    //-------- Move vehicle if charged
+}
+
+void get_gps(){
+  bool newData = false;
+
+  // For one second we parse GPS data and report some key values
+  for (unsigned long start = millis(); millis() - start < 500;)
+  {
+    while (ss.available()) // characters in the buffer
+    {
+      char c = ss.read();
+       //Serial.write(c ); // uncomment this line if you want to see the GPS data flowing
+      if (gps.encode(c)) // Did a new valid sentence come in?
+        newData = true;
+    }
+  }
+
+  if (newData)
+  {
+    float flat, flon;
+    unsigned long age;
+    gps.f_get_position(&flat, &flon, &age);
+    Serial.print(flat, 10);
+    Serial.print(",");
+    Serial.println(flon,10);
+  }
 }
 
 void move_vehicle(){
@@ -138,12 +173,14 @@ void voltage_check(){
   //Serial.print(LeftAmps);
   //Serial.print("    ");
   //Serial.println(RightAmps);
-  Serial.println("I AM ALIVE!");
+  Serial.println("I AM STILL ALIVE!");
+  
   if (LeftAmps>Leftmaxamps)                                   // is motor current draw exceeding safe limit
   {
     analogWrite (LmotorA,0);                                  // turn off motors
     analogWrite (LmotorB,0);                                  // turn off motors
     leftoverload=millis();                                    // record time of overload
+    Serial.println("left overload!");
   }
 
   if (RightAmps>Rightmaxamps)                                 // is motor current draw exceeding safe limit
@@ -151,6 +188,7 @@ void voltage_check(){
     analogWrite (RmotorA,0);                                  // turn off motors
     analogWrite (RmotorB,0);                                  // turn off motors
     rightoverload=millis();                                   // record time of overload
+    Serial.println("right overload!");
   }
 
   if ((Volts<lowvolt) && (Charged==1))                        // check condition of the battery
