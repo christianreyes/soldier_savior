@@ -20,18 +20,10 @@ boolean move = false;
 int LeftPWM = 100;                                                  // PWM value for left  motor speed / brake
 int RightPWM = 100;                                                 // PWM value for right motor speed / brake
 
-int servo[7];
-
 //-------------------------------------------------------------- define servos ------------------------------------------------------
 
-
-Servo Servo0;                                                 // define servos
-Servo Servo1;                                                 // define servos
-Servo Servo2;                                                 // define servos
-Servo Servo3;                                                 // define servos
-Servo Servo4;                                                 // define servos
-Servo Servo5;                                                 // define servos
-Servo Servo6;                                                 // define servos
+const int servo_pins[] = {2,4,7,8,9,10,12};
+Servo servos[7];
 
 //-------------------------------------------------------------- define GPS ------------------------------------------------------
 
@@ -49,27 +41,16 @@ byte index = 0;
 void setup()
 {
   //------------------------------------------------------------ Initialize Servos ----------------------------------------------------
-
-  Servo0.attach(S0);                                          // attach servo to I/O pin
-  Servo1.attach(S1);                                          // attach servo to I/O pin
-  Servo2.attach(S2);                                          // attach servo to I/O pin
-  Servo3.attach(S3);                                          // attach servo to I/O pin
-  Servo4.attach(S4);                                          // attach servo to I/O pin
-  Servo5.attach(S5);                                          // attach servo to I/O pin
-  Servo6.attach(S6);                                          // attach servo to I/O pin
-
-  //------------------------------------------------------------ Set servos to default position ---------------------------------------
-
-  Servo0.writeMicroseconds(DServo0);                          // set servo to default position
-  Servo1.writeMicroseconds(DServo1);                          // set servo to default position
-  Servo2.writeMicroseconds(DServo2);                          // set servo to default position
-  Servo3.writeMicroseconds(DServo3);                          // set servo to default position
-  Servo4.writeMicroseconds(DServo4);                          // set servo to default position
-  Servo5.writeMicroseconds(DServo5);                          // set servo to default position
-  Servo6.writeMicroseconds(DServo6);                          // set servo to default position
-
-  //------------------------------------------------------------ Initialize I/O pins --------------------------------------------------
-
+  
+  for(int i=0;i<7;i++){
+    Servo s;
+    s.attach(servo_pins[i]);
+    s.writeMicroseconds(DServo);                          // set servo to default position
+    servos[i] = s;
+  }
+  
+  //------------------------------------------------------------ Initialize Communications ----------------------------------------------------
+  
   Serial.begin(Brate);                                      // enable serial communications if Cmode=1
   Serial.println("I AM ALIVE!");
   

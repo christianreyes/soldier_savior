@@ -33,13 +33,7 @@
 
 //=================================== SERVO SETTINGS ================================================================================
 
-#define DServo0           1500     // default position for servo0 on "power up" - 1500uS is center position on most servos
-#define DServo1           1500     // default position for servo1 on "power up" - 1500uS is center position on most servos
-#define DServo2           1500     // default position for servo2 on "power up" - 1500uS is center position on most servos
-#define DServo3           1500     // default position for servo3 on "power up" - 1500uS is center position on most servos
-#define DServo4           1500     // default position for servo4 on "power up" - 1500uS is center position on most servos
-#define DServo5           1500     // default position for servo5 on "power up" - 1500uS is center position on most servos
-#define DServo6           1500     // default position for servo6 on "power up" - 1500uS is center position on most servos
+#define DServo            1500     // default position for servo0 on "power up" - 1500uS is center position on most servos
 
 
 
