@@ -4,9 +4,6 @@
 #define RmotorA             5  // Right motor H bridge, input A
 #define RmotorB             6  // Right motor H bridge, input B
 
-#define RCleft              0  // Digital input 0
-#define RCright             1  // Digital input 1
-
 #define gps_tx             A1  // Servo output 05
 #define gps_rx             A2  // Servo output 06
 

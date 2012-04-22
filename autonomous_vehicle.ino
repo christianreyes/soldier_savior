@@ -16,6 +16,7 @@ int highVolts;
 int startVolts;
 byte Charged=1;                                               // 0=Flat battery  1=Charged battery
 
+unsigned long kill = millis();
 boolean move = false;
 int LeftPWM = 100;                                                  // PWM value for left  motor speed / brake
 int RightPWM = 100;                                                 // PWM value for right motor speed / brake
@@ -52,7 +53,7 @@ void setup()
   //------------------------------------------------------------ Initialize Communications ----------------------------------------------------
   
   Serial.begin(Brate);                                      // enable serial communications if Cmode=1
-  Serial.println("I AM ALIVE!");
+  //Serial.println("I AM ALIVE!");
   
   ss.begin(4800);  // start GPS communication
 }
@@ -62,7 +63,34 @@ void loop()
   voltage_check();   //-------- Check battery voltage and current draw of motors ------
   get_gps();         // update vehicle's GPS location
   processSerial();   // process incoming serial data
+  calculate_movement();
   move_vehicle();    //-------- Move vehicle if charged
+}
+
+void calculate_movement(){
+  float m_heading = gps.course();
+  float t_heading = TinyGPS::course_to( mlat, mlon, tlat, tlon);
+  float diff = t_heading - m_heading;
+  
+  diff += (diff>180) ? -360 : (diff<-180) ? 360 : 0;    // http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
+
+  LeftPWM = (diff > 10) ? 200 : (diff < -10) ? 100 : 200;
+  RightPWM = (diff > 10) ? 100 : (diff < -10) ? 200 : 200;
+/*  
+  if(diff > 10){
+    LeftPWM = 200;
+    RightPWM = 100;
+  } else if(diff < -10){
+    LeftPWM = 100;
+    RightPWM = 200;
+  } else {
+    LeftPWM = 200;
+    RightPWM = 200;
+  }
+  */
+  
+  
+  //Serial.println(diff, 5);
 }
 
 void processSerial(){
@@ -71,7 +99,8 @@ void processSerial(){
     if(aChar == '\n') {
       // End of message detected. Time to parse
       if(String(inData).indexOf("!") != -1){
-        Serial.println("SAFE!");  
+        kill = millis();
+        move = true;
       } else {
        
         char *p = inData; 
@@ -89,10 +118,10 @@ void processSerial(){
           }
         } 
       
-        Serial.print("TLat: ");
-        Serial.print(tlat, 10);
-        Serial.print(" TLon: ");
-        Serial.println(tlon, 10);
+        //Serial.print("TLat: ");
+        //Serial.print(tlat, 10);
+        //Serial.print(" TLon: ");
+        //Serial.println(tlon, 10);
       }
       
       index = 0;
@@ -136,56 +165,54 @@ void move_vehicle(){
   //----------------------------------------------------------- GOOD BATTERY speed controller opperates normally ----------------------
   // --------------------------------------------------------- Code to drive dual "H" bridges --------------------------------------
 
-  if (Charged==1 && move)                                           // Only power motors if battery voltage is good
-  {
-    if ((millis()-leftoverload)>overloadtime)  // if left motor has not overloaded recently        
-    {                                          // left motor forward
-        analogWrite(LmotorA,0);
-        analogWrite(LmotorB,LeftPWM);
+  if (move && millis() - kill < 1000){                                           // Only power motors if battery voltage is good
+    if ((millis()-leftoverload)>overloadtime){  // if left motor has not overloaded recently        
+      l_motor(0, LeftPWM);                      // left motor forward
     }
-    if ((millis()-rightoverload)>overloadtime) // if right motor has not overloaded recently
-    {                                          // right motor forward
-        analogWrite(RmotorA,0);
-        analogWrite(RmotorB,RightPWM);
+    if ((millis()-rightoverload)>overloadtime){ // if right motor has not overloaded recently
+      r_motor(0, RightPWM);                     // right motor forward
     } 
   }
-  else                                                      // Battery is flat
-  {
-    analogWrite (LmotorA,0);                                // turn off motors
-    analogWrite (LmotorB,0);                                // turn off motors
-    analogWrite (RmotorA,0);                                // turn off motors
-    analogWrite (RmotorB,0);                                // turn off motors
+  /*
+  else{                                        // Battery is flat
+    l_motor(0,0);                              // turn off motors
+    r_motor(0,0);                              // turn off motors
   }
+  */
+}
+
+void l_motor(int a_pwm, int b_pwm){
+  analogWrite(LmotorA,a_pwm);
+  analogWrite(LmotorB,b_pwm);
+}
+
+void r_motor(int a_pwm, int b_pwm){
+  analogWrite(RmotorA,a_pwm);
+  analogWrite(RmotorB,b_pwm);
 }
 
 void voltage_check(){
   //-------- Check battery voltage and current draw of motors ------
   
-  Volts=analogRead(Battery);                                  // read the battery voltage
+  //Volts=analogRead(Battery);                                  // read the battery voltage
   LeftAmps=analogRead(LmotorC);                               // read left motor current draw
   RightAmps=analogRead(RmotorC);                              // read right motor current draw
-
-  //Serial.print(LeftAmps);
-  //Serial.print("    ");
-  //Serial.println(RightAmps);
-  //Serial.println("I AM STILL ALIVE!");
+  //Serial.print(LeftAmps);Serial.print("    ");Serial.println(RightAmps); 
   
   if (LeftAmps>Leftmaxamps)                                   // is motor current draw exceeding safe limit
   {
-    analogWrite (LmotorA,0);                                  // turn off motors
-    analogWrite (LmotorB,0);                                  // turn off motors
+    l_motor(0,0);                                             // turn off motors
     leftoverload=millis();                                    // record time of overload
-    Serial.println("left overload!");
+    //Serial.println("left overload!");
   }
 
   if (RightAmps>Rightmaxamps)                                 // is motor current draw exceeding safe limit
   {
-    analogWrite (RmotorA,0);                                  // turn off motors
-    analogWrite (RmotorB,0);                                  // turn off motors
+    r_motor(0,0);                                             // turn off motors
     rightoverload=millis();                                   // record time of overload
-    Serial.println("right overload!");
+    //Serial.println("right overload!");
   }
-
+  
   if ((Volts<lowvolt) && (Charged==1))                        // check condition of the battery
   {                                                           // change battery status from charged to flat
 
@@ -200,7 +227,10 @@ void voltage_check(){
     //digitalWrite (Charger,0);                                 // enable current regulator to charge battery
     Serial.println("NEEDS CHARGING!");
   }
+  
 }
+
+
 
 
 

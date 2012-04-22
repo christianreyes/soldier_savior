@@ -291,6 +291,7 @@ int TinyGPS::gpsstrcmp(const char *str1, const char *str2)
 }
 
 /* static */
+/*
 float TinyGPS::distance_between (float lat1, float long1, float lat2, float long2) 
 {
   // returns distance in meters between two positions, both specified 
@@ -315,6 +316,7 @@ float TinyGPS::distance_between (float lat1, float long1, float lat2, float long
   delta = atan2(delta, denom); 
   return delta * 6372795; 
 }
+*/
 
 float TinyGPS::course_to (float lat1, float long1, float lat2, float long2) 
 {
@@ -336,6 +338,7 @@ float TinyGPS::course_to (float lat1, float long1, float lat2, float long2)
   return degrees(a2);
 }
 
+/*
 const char *TinyGPS::cardinal (float course)
 {
   static const char* directions[] = {"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"};
@@ -343,6 +346,7 @@ const char *TinyGPS::cardinal (float course)
   int direction = (int)((course + 11.25f) / 22.5f);
   return directions[direction % 16];
 }
+*/
 
 // lat/long in hundred thousandths of a degree and age of fix in milliseconds
 void TinyGPS::get_position(long *latitude, long *longitude, unsigned long *fix_age)
