@@ -14,18 +14,12 @@ unsigned long leftoverload;
 unsigned long rightoverload;
 int highVolts;
 int startVolts;
-int Leftspeed=0;
-int Rightspeed=0;
-int Speed;
-int Steer;
 byte Charged=1;                                               // 0=Flat battery  1=Charged battery
-int Leftmode=1;                                               // 0=reverse, 1=brake, 2=forward
-int Rightmode=1;                                              // 0=reverse, 1=brake, 2=forward
-byte Leftmodechange=0;                                        // Left input must be 1500 before brake or reverse can occur
-byte Rightmodechange=0;                                       // Right input must be 1500 before brake or reverse can occur
-int LeftPWM = 200;                                                  // PWM value for left  motor speed / brake
-int RightPWM = 200;                                                 // PWM value for right motor speed / brake
-int data;
+
+boolean move = false;
+int LeftPWM = 100;                                                  // PWM value for left  motor speed / brake
+int RightPWM = 100;                                                 // PWM value for right motor speed / brake
+
 int servo[7];
 
 //-------------------------------------------------------------- define servos ------------------------------------------------------
@@ -111,47 +105,17 @@ void move_vehicle(){
   //----------------------------------------------------------- GOOD BATTERY speed controller opperates normally ----------------------
   // --------------------------------------------------------- Code to drive dual "H" bridges --------------------------------------
 
-  if (Charged==1)                                           // Only power motors if battery voltage is good
+  if (Charged==1 && move)                                           // Only power motors if battery voltage is good
   {
-    if ((millis()-leftoverload)>overloadtime)             
-    {
-      switch (Leftmode)                                     // if left motor has not overloaded recently
-      {
-      case 2:                                               // left motor forward
+    if ((millis()-leftoverload)>overloadtime)  // if left motor has not overloaded recently        
+    {                                          // left motor forward
         analogWrite(LmotorA,0);
         analogWrite(LmotorB,LeftPWM);
-        break;
-
-      case 1:                                               // left motor brake
-        analogWrite(LmotorA,LeftPWM);
-        analogWrite(LmotorB,LeftPWM);
-        break;
-
-      case 0:                                               // left motor reverse
-        analogWrite(LmotorA,LeftPWM);
-        analogWrite(LmotorB,0);
-        break;
-      }
     }
-    if ((millis()-rightoverload)>overloadtime)
-    {
-      switch (Rightmode)                                    // if right motor has not overloaded recently
-      {
-      case 2:                                               // right motor forward
+    if ((millis()-rightoverload)>overloadtime) // if right motor has not overloaded recently
+    {                                          // right motor forward
         analogWrite(RmotorA,0);
         analogWrite(RmotorB,RightPWM);
-        break;
-
-      case 1:                                               // right motor brake
-        analogWrite(RmotorA,RightPWM);
-        analogWrite(RmotorB,RightPWM);
-        break;
-
-      case 0:                                               // right motor reverse
-        analogWrite(RmotorA,RightPWM);
-        analogWrite(RmotorB,0);
-        break;
-      }
     } 
   }
   else                                                      // Battery is flat
@@ -173,7 +137,7 @@ void voltage_check(){
   //Serial.print(LeftAmps);
   //Serial.print("    ");
   //Serial.println(RightAmps);
-  Serial.println("I AM STILL ALIVE!");
+  //Serial.println("I AM STILL ALIVE!");
   
   if (LeftAmps>Leftmaxamps)                                   // is motor current draw exceeding safe limit
   {
