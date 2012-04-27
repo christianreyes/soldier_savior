@@ -8,7 +8,7 @@ When the soldier's vitals indicate danger, the vehicle will use its robotic arm 
 
 The following commands are supported over Serial to the Brain:
 
-* SETSPEED LeftPWMValue RightPWMValue 
+* `SETSPEED LeftPWMValue RightPWMValue`
 
 For instance, to set the speed of the left wheels to 100 and the speed of the right wheels to 200: `Serial.println("SETSPEED 100 200");`
 
