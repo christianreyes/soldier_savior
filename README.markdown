@@ -7,6 +7,7 @@ When the soldier's vitals indicate danger, the vehicle will use its robotic arm 
 ##Final Project
 
 05833: Gadgets, Sensors and Activity Recognition in Human-Computer Interaction
+
 Carnegie Mellon University
 
 * Technical lead and system architect: Christian Reyes
