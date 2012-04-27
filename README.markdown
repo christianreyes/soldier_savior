@@ -10,7 +10,7 @@ The following commands are supported over Serial to the Brain:
 
 * `SETSPEED LeftPWMValue RightPWMValue`
 
-For instance, to set the speed of the left wheels to 100 and the speed of the right wheels to 200: `Serial.println("SETSPEED 100 200");`
+For instance, to set the speed of the left wheels to 100 and the speed of the right wheels to 200: `Serial.println("SETSPEED 100 200");` or `Serial.println("SETSPEED " + String(LeftPWM) + " " + String(RightPWM));` (if you have the values in those variables).
 
 ##Final Project
 

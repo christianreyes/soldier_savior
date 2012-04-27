@@ -69,7 +69,7 @@ void move_vehicle(){
   // --------------------------------------------------------- Code to drive dual "H" bridges --------------------------------------
   last_message = last_message + 1UL;
 
-  if ( last_message < 5UL ){         // Only power motors if battery voltage is good
+  if ( last_message < 5000UL ){         // Only power motors if battery voltage is good
     //Serial.println(permission);
     if ((millis()-leftoverload)>overloadtime){  // if left motor has not overloaded recently        
       l_motor(0, LeftPWM);                      // left motor forward
