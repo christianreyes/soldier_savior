@@ -9,7 +9,7 @@ When the soldier's vitals indicate danger, the vehicle will use its robotic arm 
 05833: Gadgets, Sensors and Activity Recognition in Human-Computer Interaction
 Carnegie Mellon University
 
-Technical lead and system architect: Christian Reyes
-Vehicle, Brain, and Communications: Christian Reyes
-Robotic Arm: Aderinsola Akintilo
-Human Vital Sensors: Almas Tuyakbayev
+* Technical lead and system architect: Christian Reyes
+* Vehicle, Brain, and Communications: Christian Reyes
+* Robotic Arm: Aderinsola Akintilo
+* Human Vital Sensors: Almas Tuyakbayev
