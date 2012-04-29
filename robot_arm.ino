@@ -18,51 +18,24 @@ void setup()
   wrist.attach(5);  // attaches the servo on pin 9 to the servo object 
   claw.attach(3);
   swivel.attach(2); 
-   pinMode(13, OUTPUT);  
-//  claw.writeMicroseconds(1400);
-//  wrist.writeMicroseconds(1800); 
+  pinMode(13, OUTPUT);  
+  // claw.writeMicroseconds(1400);
+  //  wrist.writeMicroseconds(1800); 
 } 
 
 void loop() 
 { 
- digitalWrite(13, HIGH);   // set the LED on
-
+  digitalWrite(13, HIGH);   // set the LED on
+  delay(100); 
+  digitalWrite(13, LOW);
   // For the Wrist
-  for(pos = 0; pos < 200; pos += 1) //picking up 
-  {
-    wrist.write(pos); 
-    delay(15); 
-  }
-  for(pos = 200; pos>=1; pos-=1) // dropping off
-  {
-    wrist.write(pos); 
-    delay(15);  
-  }
-  
-    for(pos = 0; pos < 200; pos += 1) //picking up 
-  {
-    swivel.write(pos); 
-    delay(35); 
-  }
-  for(pos = 200; pos>=1; pos-=1) // dropping off
-  {
-    swivel.write(pos); 
-    delay(35);  
-  }
-  
-  
-  // For the Claw
-   for(pos = 0; pos < 160; pos += 1) //closing up 
-  {
-    
-    //Serial.println("the wrist's degrees: " + wrist.read()); 
-     
-    claw.write(pos); 
-    delay(50); 
-  }
+  //move_wrist(); 
+  claw_movements(); 
 
-digitalWrite(13, LOW);
-  //   for(pos = 160; pos>=1; pos-=1)   //opening  // goes from 180 degrees to 0 degrees 
+  // For the Claw
+
+
+    //   for(pos = 160; pos>=1; pos-=1)   //opening  // goes from 180 degrees to 0 degrees 
   //  {                             
   ////    wrist.write(pos); 
   ////    delay(pos/5); 
@@ -85,4 +58,59 @@ digitalWrite(13, LOW);
   //        // waits 15ms for the servo to reach the position 
   //  } 
 }
+
+void move_wrist()
+{
+  for(pos = 0; pos < 200; pos += 1) //picking up 
+  {
+    wrist.write(pos); 
+    delay(10); 
+  }
+
+  for(pos = 200; pos>=1; pos-=1) // dropping off
+  {
+    wrist.write(pos); 
+    delay(10);  
+  }
+//  close_claw(); 
+}
+
+void claw_movements()
+{
+  for(pos = 0; pos < 50; pos += 1) //  closing 
+  {
+    if (claw.read() == 49) // if the claw is closed
+    {
+      claw.detach();  // stop moving. 
+    } 
+    claw.write(pos); // else keep closing
+    delay(30); 
+  }
+  
+  delay(6000); //keep grip while holding on to object. 
+  claw.attach(3); // reattach the claw so that it can drop the object. 
+  
+  for(pos = 50; pos >= 1; pos -= 1) //  opening
+  {
+    claw.write(pos); 
+    delay(20); 
+  }
+  delay(6000); //stay open while wrist resets. 
+}
+
+
+void turn_swivel()
+{
+  for(pos = 0; pos < 200; pos += 1) //picking up 
+  {
+    swivel.write(pos); 
+    delay(35); 
+  }
+  for(pos = 200; pos>=1; pos-=1) // dropping off
+  {
+    swivel.write(pos); 
+    delay(35);  
+  } 
+}
+
 
