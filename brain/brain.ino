@@ -21,19 +21,17 @@ boolean self = false;
 
 float mlat = 0.0;
 float mlon = 0.0;
-float tlat = 40.44268902361984;
-float tlon =  -79.93807911872864;
+float tlat = 40.443162605670395;
+float tlon = -79.94024097919464;
 float diff;
 
 void setup() {
   pinMode(13, OUTPUT);
-  delay(2000);             // wait for vehicle systems to start
-  //Serial.begin(9600);      // enable wireless serial communications
-
+  
   Serial.begin(4800);      // start GPS communication
   ss_vehicle.begin(9600);  // start vehicle communication  
 
-  //Serial.println("ONLINE BRAIN");
+  delay(5000);             // wait for vehicle systems to start
 }
 
 void loop() {
@@ -50,22 +48,13 @@ void get_gps(){
       unsigned long age;
       gps.f_get_position(&mlat, &mlon, &age); // update position of self
       self = true;
-      //digitalWrite(13, HIGH);
-      /*
-      Serial.print(mlat);
-      Serial.print(" ");
-      Serial.print(mlon);
-      Serial.print(" ");
-      Serial.print(LeftPWM);
-      Serial.print(" ");
-      Serial.println(RightPWM);
-      */
     }
   }
 }
 
 void calculate_movement(){
-  if(self && target && TinyGPS::distance_between( mlat, mlon, tlat, tlon) > 3.0 ){
+  if(self && target && TinyGPS::distance_between( mlat, mlon, tlat, tlon) > 10.0 ){
+    digitalWrite(13, HIGH);
     float m_heading = gps.f_course();
     float t_heading = TinyGPS::course_to( mlat, mlon, tlat, tlon);
     diff = t_heading - m_heading;
@@ -74,9 +63,19 @@ void calculate_movement(){
   
     LeftPWM = (diff > 10) ? 200 : (diff < -10) ? 80 : 230;
     RightPWM = (diff > 10) ? 80 : (diff < -10) ? 200 : 230; 
+    
+    LeftPWM = 200;
+    RightPWM = 200;
   } else {
     LeftPWM = 0;
     RightPWM = 0;
+    
+    if(self){
+      target = false;
+      digitalWrite(13, LOW);
+      delay(1000);
+      digitalWrite(13, HIGH);
+    }
   }
 }
 
