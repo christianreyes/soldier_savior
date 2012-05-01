@@ -19,7 +19,7 @@ void loop()
   if(digitalRead(killswitch) == HIGH)
     Serial.println("GO");
     
-  delay(250);
+  //delay(250);
 
   // For one second we parse GPS data and report some key values
   while (ss.available()) // characters in the buffer
