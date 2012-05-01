@@ -24,7 +24,7 @@ For instance, to set the speed of the left wheels to 100 and the speed of the ri
 
 Carnegie Mellon University
 
-* Technical lead and system architect: Christian Reyes
-* Vehicle, Brain, and Communications: Christian Reyes
+* Technical lead and system architect: Christian Reyes 
+* Vehicle, Brain, and Communications (monitor): Christian Reyes
 * Robotic Arm: Aderinsola Akintilo
 * Human Vital Sensors: Almas Tuyakbayev
