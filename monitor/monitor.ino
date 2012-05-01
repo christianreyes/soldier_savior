@@ -1,3 +1,16 @@
+/*
+
+Christian Reyes
+
+Carnegie Mellon University
+05-833 Gadgets, Sensors, and Activity Recognition in Human-Computer Interaction
+
+5/1/2012
+
+Project 3: Make a Cool Gadget
+
+*/
+
 #include <SoftwareSerial.h>
 #include "TinyGPS.h"
 
@@ -17,7 +30,7 @@ void setup()
 void loop()
 {
   if(digitalRead(killswitch) == HIGH)
-    Serial.println("GO");
+    Serial.println("GO"); // give permission
     
   //delay(250);
 
@@ -33,7 +46,7 @@ void loop()
       Serial.print("TGPS_COORD ");
       Serial.print(flat, 10);
       Serial.print(" ");
-      Serial.println(flon,10);
+      Serial.println(flon,10); // send GPS coordinates to brain
     }
   }
 }

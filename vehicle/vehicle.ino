@@ -1,3 +1,16 @@
+/*
+
+Christian Reyes
+
+Carnegie Mellon University
+05-833 Gadgets, Sensors, and Activity Recognition in Human-Computer Interaction
+
+5/1/2012
+
+Project 3: Make a Cool Gadget
+
+*/
+
 #include <Servo.h>
 #include "IOpins.h"
 #include "Constants.h"
@@ -59,6 +72,8 @@ void cmd_set_speed(){
   
   char *arg;
   
+  // process incoming speeds
+  
   arg = sCmd.next();
   if (arg != NULL) { LeftPWM = atoi(arg); Serial.println("Set left speed to : " + String(LeftPWM));}   // Converts a char string to an integer
   else { Serial.println("SETSPEED: No left PWM arg"); }
@@ -82,7 +97,7 @@ void move_vehicle(){
       r_motor(0, RightPWM);                     // right motor forward
     } 
   } else{
-    l_motor(0, 0);
+    l_motor(0, 0); // stop the vehicle
     r_motor(0, 0);
   }
   
@@ -92,12 +107,12 @@ void move_vehicle(){
 }
 
 void l_motor(int a_pwm, int b_pwm){
-  analogWrite(LmotorA,a_pwm);
+  analogWrite(LmotorA,a_pwm);  // send voltages to drive motors
   analogWrite(LmotorB,b_pwm);
 }
 
 void r_motor(int a_pwm, int b_pwm){
-  analogWrite(RmotorA,a_pwm);
+  analogWrite(RmotorA,a_pwm); // send voltages to drive motors
   analogWrite(RmotorB,b_pwm);
 }
 

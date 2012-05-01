@@ -1,3 +1,17 @@
+
+/*
+
+Christian Reyes
+
+Carnegie Mellon University
+05-833 Gadgets, Sensors, and Activity Recognition in Human-Computer Interaction
+
+5/1/2012
+
+Project 3: Make a Cool Gadget
+
+*/
+
 #include <SoftwareSerial.h>
 #include "AltSoftSerial.h"
 #include "SerialCommand.h"
@@ -14,7 +28,7 @@ int RightPWM = 0;                                                 // PWM value f
 
 TinyGPS gps;
 SoftwareSerial ss_gps(3, NULL);     // RX, TX
-AltSoftSerial ss_vehicle; //(NULL, 2); // RX, TX
+AltSoftSerial ss_vehicle; // uses pin 9 for RX by default
 SerialCommand sCmd;
 
 boolean target = false;
@@ -26,18 +40,14 @@ float tlat = 0.0;
 float tlon = 0.0;
 float diff;
 
-boolean toggle = true;
-
 void setup() {
   pinMode(13, OUTPUT);
   
   ss_vehicle.begin(9600);  // start vehicle communication  
   ss_gps.begin(4800);      // start GPS communication
   Serial.begin(9600);  // start vehicle communication  
-  
-  Serial.println(" ");
 
-  sCmd.addCommand("TGPS_COORD", target_gps);
+  sCmd.addCommand("TGPS_COORD", target_gps); // add serial command to process
 
   delay(5000);             // wait for vehicle systems to start
 }
@@ -51,7 +61,7 @@ void loop() {
   get_gps();               // update vehicle's GPS location
   calculate_movement();    // calculate how to get to target
   
-  sCmd.readSerial();
+  sCmd.readSerial();      // process incoming serial
   move_vehicle();           // command vehicle to move to target
   
   /*
@@ -71,13 +81,13 @@ void target_gps(){
  
   arg = sCmd.next();
   if (arg != NULL){
-    tlat= atof(arg);
+    tlat= atof(arg);  // process the latitutde
   }
   
   arg = sCmd.next();
   if (arg != NULL) {
     target = true;   
-    tlon = atof(arg); 
+    tlon = atof(arg); // process the latitude
   }
 }
 
@@ -105,27 +115,27 @@ void calculate_movement(){
     diff = t_heading - m_heading;
     diff += (diff>180) ? -360 : (diff<-180) ? 360 : 0;    // http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
     
-    if(diff > 15){
-      LeftPWM = 100;  	
-      RightPWM = 200;	  	
-    } else if(diff < -15){  	
+    if(diff > 15.0){
       LeftPWM = 200;  	
-      RightPWM = 100;  	
+      RightPWM = 100;	  	
+    } else if(diff < -15.0){  	
+      LeftPWM = 100;  	
+      RightPWM = 200;  	
     } else {	  	
       LeftPWM = 158;	
       RightPWM = 200;
     }
     */
-    LeftPWM = 158;
+    LeftPWM = 158;  // values to move straight
     RightPWM = 200;
   } else {
-    LeftPWM = 0;
+    LeftPWM = 0;    // stop the vehicle
     RightPWM = 0;
   }
 }
 
 void move_vehicle(){
-  ss_vehicle.println("SETSPEED " + String(LeftPWM) + " " + String(RightPWM));
+  ss_vehicle.println("SETSPEED " + String(LeftPWM) + " " + String(RightPWM)); // send command to vehicle to move
 }
 
 
