@@ -1,0 +1,979 @@
+lines(density(age.missing[ppww  == "Home"]), col = "blue", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "cyan", lwd=2, lty=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Friend"]), col = 2, lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "blue2", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "blue3", lwd=2, lty=2)
+lines(density(age.missing[ppww  == "Home"]), col = "blue", lwd=2)
+lines(density(age.missing[ppww  == "Other"]), col = 4, lwd=2)
+lines(density(age.missing[ppww  == "Other"]), col = "green", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Friend"]), col = 2, lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "blue", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "blue3", lwd=2, lty=2)
+lines(density(age.missing[ppww  == "Other"]), col = "green", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "blue", lwd=2, lty=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Friend"]), col = 2, lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "blue", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "blue", lwd=2, lty=2)
+lines(density(age.missing[ppww  == "Other"]), col = "green", lwd=2)
+lines(density(age.missing[ppww  == "Friend"]), col = "purp;e", lwd=2)
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ff55", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ff55", lwd=2)
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffaa", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffaa", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffaa", lwd=2, lty=2)
+plot(density(age.missing[ppww =="Distributed"]), col = 1, ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)
+lines(density(age.missing[ppww  == "Other"]), col = "green", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00cc", lwd=2)
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)
+indices]#
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff000099", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)
+lines(density(age.missing[ppww  == "Public"]), col = 7, lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F2B33Dcc", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F2ED11cc", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F2E704cc", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F2E704ee", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F24C12ee", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Friend"]), col = "purple", lwd=2)#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff0099", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00cc", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),c("#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2)
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2)
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2, lyt=c(1,1,2,1,1,2,1,1))
+age.missing = as.matrix(Age)#
+age.missing = as.numeric(age.missing)#
+indices = which(!age.missing == "Not Say!")#
+ppww = Primary.Place.of.WWW.Access[indices]#
+age.missing = age.missing[indices]#
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=200 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2, lty=c(1,1,2,1,1,2,1,1))
+length(age.missing)
+age.missing = as.matrix(Age)#
+length(age.missing)#
+age.missing = as.numeric(age.missing)#
+indices = which(!age.missing == "Not Say!")#
+ppww = Primary.Place.of.WWW.Access[indices]#
+age.missing = age.missing[indices]#
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=530 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2, lty=c(1,1,2,1,1,2,1,1))
+mosaicplot(Major.Occupation~Primary.Place.of.WWW.Access, shade=T, las=2, main="Major Occupation vs. Primary Place of WWW Access\nH0 = Major Occupation independent of Primary Place of WWW Access")
+mosaicplot(Household.Income~Primary.Place.of.WWW.Access, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,])
+hiwww
+mosaicplot(hiwww[7,], shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]))
+hiwww
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)#
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), byrow=t, ncol=9)#
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), byrow=t, ncol=9)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), byrow=t, ncol=9)
+hiwww
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), byrow=T, ncol=9)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+hiwww
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)
+hiwww
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+levels(Household.Income)
+colnames(hiwww) = c(l[7],l[9], l[1:6], l[8])
+l = levels(Household.Income)
+colnames(hiwww) = c(l[7],l[9], l[1:6], l[8])
+hiwww
+l = levels(Primary.Place.of.WWW.Access)
+rownames(hiwww) = levels(Primary.Place.of.WWW.Access)
+hiwww
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(t(hiwww), shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(Household.Income~Primary.Place.of.WWW.Access, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(t(hiwww), shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+colnames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+rownames(hiwww) = levels(Primary.Place.of.WWW.Access)
+hiwww
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)
+table(Household.Income,Primary.Place.of.WWW.Access)
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+rownames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+colnames(hiwww) = levels(Primary.Place.of.WWW.Access)
+hiwww
+mosaicplot(t(hiwww), shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(Household.Income~Primary.Place.of.WWW.Access, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(Household.Income~Primary.Place.of.WWW.Access, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(Household.Income~Primary.Place.of.WWW.Access, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)#
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+rownames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+colnames(hiwww) = levels(Primary.Place.of.WWW.Access)#
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+Web.Ordering#
+which(Web.Ordering=="Don't know")#
+which(Web.Ordering=="Dont know")#
+#150, 344, 418, 146, 275, 375#
+#
+WO.missing=Web.Ordering#
+WO.missing[which(Web.Ordering=="Don't know")]=NA#
+WO.missing[which(Web.Ordering=="Dont know")]=NA#
+table(WO.missing)#
+WO.missing=as.matrix(WO.missing)#
+table(WO.missing)#
+WO.missing1=na.omit(WO.missing)#
+length(WO.missing1)#
+#
+Gender.missing=Gender#
+Gender.missing[which(Web.Ordering=="Don't know")]=NA#
+Gender.missing[which(Web.Ordering=="Dont know")]=NA#
+Gender.missing=as.matrix(Gender.missing)#
+Gender.missing1=na.omit(Gender.missing)#
+table(Gender.missing1)#
+length(Gender.missing1)#
+#
+Household.Income.missing=Household.Income#
+Household.Income.missing[which(Web.Ordering=="Don't know")]=NA#
+Household.Income.missing[which(Web.Ordering=="Dont know")]=NA#
+Household.Income.missing=as.matrix(Household.Income.missing)#
+Household.Income.missing1=na.omit(Household.Income.missing)#
+table(Household.Income.missing1)#
+length(Household.Income.missing1)#
+#
+HHIM=Household.Income.missing1#
+GM1=Gender.missing1#
+WOM1=WO.missing1
+mosaicplot(WOM1~HHIM+GM1, shade=T, xlab="Variable 1: Purchasing Online, Variable 2: Gender", ylab= "Household Income in Thousands", main="Gender and Household Income conditioned on Online Purchasing")
+mosaicplot(Major.Occupation~Primary.Computing.Platform,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")
+mosaicplot(WOM1~HHIM+GM1, shade=T, xlab="Variable 1: Purchasing Online, Variable 2: Gender", ylab= "Household Income in Thousands", main="Gender and Household Income conditioned on Online Purchasing")
+par(mfrow=c(2,2))#
+#
+# ---------------------------Race------------------------------#
+#
+length(data[,1])#
+race.missing = as.matrix(Race)#
+race.missing#
+pie(table(race.missing), col=c(1,2,3,4,5,6,7), main="Distribution of Race via Pie Chart\n N=546")#
+#
+# -----------------------Gender (Pie Chart)-------------------#
+#
+table(Gender)#
+pie(table(Gender), col=c("pink", "blue"), main="Distribution of Gender via Pie Chart\nN=546")#
+#
+# -----------------------#Age (Histogram)---------------------#
+#
+age.missing=as.matrix(Age)#
+age.missing[which(age.missing == "Not Say!")] = NA#
+age.missing=as.numeric(age.missing)#
+age.missing=na.omit(age.missing)#
+#
+hist(age.missing, xlab="Age", breaks=c(0,10,20,30,40,50,60,70,80,90), ylab="Counts", main="Age Distribution of Northeast Surveyors",col=3)
+age.missing = as.matrix(Age)#
+length(age.missing)#
+age.missing = as.numeric(age.missing)#
+indices = which(!age.missing == "Not Say!")#
+ppww = Primary.Place.of.WWW.Access[indices]#
+age.missing = age.missing[indices]#
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=530 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#F200D6cc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#F200D6cc") , lwd=2, lty=c(1,1,2,1,1,2,1,1))
+Where you use the internet and occupation are not independent #
+mosaicplot(Major.Occupation~Primary.Place.of.WWW.Access, shade=T, las=2, main="Major Occupation vs. Primary Place of WWW Access\nH0 = Major Occupation independent of Primary Place of WWW Access")
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)#
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+rownames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+colnames(hiwww) = levels(Primary.Place.of.WWW.Access)#
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)
+Web.Ordering#
+which(Web.Ordering=="Don't know")#
+which(Web.Ordering=="Dont know")#
+#150, 344, 418, 146, 275, 375#
+#
+WO.missing=Web.Ordering#
+WO.missing[which(Web.Ordering=="Don't know")]=NA#
+WO.missing[which(Web.Ordering=="Dont know")]=NA#
+WO.missing=as.matrix(WO.missing)#
+WO.missing1=na.omit(WO.missing)#
+#
+Gender.missing=Gender#
+Gender.missing[which(Web.Ordering=="Don't know")]=NA#
+Gender.missing[which(Web.Ordering=="Dont know")]=NA#
+Gender.missing=as.matrix(Gender.missing)#
+Gender.missing1=na.omit(Gender.missing)#
+#
+Household.Income.missing=Household.Income#
+Household.Income.missing[which(Web.Ordering=="Don't know")]=NA#
+Household.Income.missing[which(Web.Ordering=="Dont know")]=NA#
+Household.Income.missing=as.matrix(Household.Income.missing)#
+Household.Income.missing1=na.omit(Household.Income.missing)#
+#
+HHIM=Household.Income.missing1#
+GM1=Gender.missing1#
+WOM1=WO.missing1#
+#
+mosaicplot(WOM1~HHIM+GM1, shade=T, xlab="Variable 1: Purchasing Online, Variable 2: Gender", ylab= "Household Income in Thousands", main="Gender and Household Income conditioned on Online Purchasing")
+mosaicplot(Major.Occupation~Primary.Computing.Platform,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")
+PosterCode #
+#GroupNorthEast #
+#
+data = read.table("northeast.txt")#
+names(data)#
+attach(data)#
+#
+# =============================================================#
+#						Area 1: Demographics #
+# =============================================================#
+# include sample size, code sample percentage #
+#
+par(mfrow=c(2,2))#
+#
+# ---------------------------Race------------------------------#
+#
+length(data[,1])#
+race.missing = as.matrix(Race)#
+race.missing#
+pie(table(race.missing), col=c(1,2,3,4,5,6,7), main="Distribution of Race via Pie Chart\n N=546")#
+#
+# -----------------------Gender (Pie Chart)-------------------#
+#
+table(Gender)#
+pie(table(Gender), col=c("pink", "blue"), main="Distribution of Gender via Pie Chart\nN=546")#
+#
+# -----------------------#Age (Histogram)---------------------#
+#
+age.missing=as.matrix(Age)#
+age.missing[which(age.missing == "Not Say!")] = NA#
+age.missing=as.numeric(age.missing)#
+age.missing=na.omit(age.missing)#
+#
+hist(age.missing, xlab="Age", breaks=c(0,10,20,30,40,50,60,70,80,90), ylab="Counts", main="Age Distribution of Northeast Surveyors",col=3)#
+#add legend#
+#don't need a legend. axis describes the information.#
+#
+# =============================================================#
+#		Area2: Age & Where you use the Internet (ie: Home) #
+# =============================================================#
+#
+##
+#Question2#
+#Where you mainly use internet and age #
+#hypothesis: They are not independent#
+#compare modes #
+#we will edit the legend and colors and line style to reflect the specificity of the type (primarily vs. not primarily)#
+#not compact #
+#this graph shows not they are independent because the modes are signficantly different #
+# NOTE that friend has been removed because of only having 1 observation#
+# Age "Not Say!" removed.#
+#
+age.missing = as.matrix(Age)#
+length(age.missing)#
+age.missing = as.numeric(age.missing)#
+indices = which(!age.missing == "Not Say!")#
+ppww = Primary.Place.of.WWW.Access[indices]#
+age.missing = age.missing[indices]#
+plot(density(age.missing[ppww =="Distributed"]), col = "#000000cc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=530 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Home"]), col = "#0000ffcc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily home"]), col = "#0000ffcc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "Primarily work"]), col = "#ff0000cc", lwd=2, lty=2)#
+lines(density(age.missing[ppww  == "Public"]), col = "#F27600ee", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#9D06FFcc", lwd=2)#
+legend("topright", c("Distributed", "Home","Primarily home","Other","Work", "Primarily work", "Public", "School" ),col=c("#000000cc","#0000ffcc", "#0000ffcc", "#00ff00ee", "#ff0000cc", "#ff0000cc", "#F27600ee", "#9D06FFcc") , lwd=2, lty=c(1,1,2,1,1,2,1,1))#
+#
+# =============================================================#
+#	  Area 3: Major Occupation & Where you use the Internet#
+# =============================================================#
+#
+#Where you use the internet and occupation are not independent #
+mosaicplot(Major.Occupation~Primary.Place.of.WWW.Access, shade=T, las=2, main="Major Occupation vs. Primary Place of WWW Access\nH0 = Major Occupation independent of Primary Place of WWW Access")#
+#clearly not independent #
+#lots of residuals #
+#sparseness in variable 2 (primary place of access) #
+#ragged edges #
+#people who dont classify in one of the major occupations (aka other)use their primary place of internet usage at home#
+#professional category does not deviate from the expectations #
+#other may refer to not in an office; blue collar which therefore reflects that they would not necessarily using internet access from work. We see a lot more internet usage at home than at work if they were independent. #
+#fix: Income columns in order #
+#
+# =============================================================#
+# Area 4: Household Income vs. Primary Place of Internet Access#
+# =============================================================#
+#
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)#
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+rownames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+colnames(hiwww) = levels(Primary.Place.of.WWW.Access)#
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)#
+#for some reason I cannot find any information we wrote about this besides whats in the email i sent #
+#
+# =============================================================#
+# Area 5: Household Income/Gender/Whether Individuals Purchase Online#
+# =============================================================#
+#
+Web.Ordering#
+which(Web.Ordering=="Don't know")#
+which(Web.Ordering=="Dont know")#
+#150, 344, 418, 146, 275, 375#
+#
+WO.missing=Web.Ordering#
+WO.missing[which(Web.Ordering=="Don't know")]=NA#
+WO.missing[which(Web.Ordering=="Dont know")]=NA#
+WO.missing=as.matrix(WO.missing)#
+WO.missing1=na.omit(WO.missing)#
+#
+Gender.missing=Gender#
+Gender.missing[which(Web.Ordering=="Don't know")]=NA#
+Gender.missing[which(Web.Ordering=="Dont know")]=NA#
+Gender.missing=as.matrix(Gender.missing)#
+Gender.missing1=na.omit(Gender.missing)#
+#
+Household.Income.missing=Household.Income#
+Household.Income.missing[which(Web.Ordering=="Don't know")]=NA#
+Household.Income.missing[which(Web.Ordering=="Dont know")]=NA#
+Household.Income.missing=as.matrix(Household.Income.missing)#
+Household.Income.missing1=na.omit(Household.Income.missing)#
+#
+HHIM=Household.Income.missing1#
+GM1=Gender.missing1#
+WOM1=WO.missing1#
+#
+mosaicplot(WOM1~HHIM+GM1, shade=T, xlab="Variable 1: Purchasing Online, Variable 2: Gender", ylab= "Household Income in Thousands", main="Gender and Household Income conditioned on Online Purchasing")#
+#distribution of males and females are different for purchasing online and not purchasing online#
+#Males who make over $100K are purchasing more than expected observations. #
+#More females who make less than $10K are not purchasing more than expected observations; Less males are buying online when they make less than $10K --> Income and Gender does influence online purchasing #
+#Largest Bracket for Household Income Not Purchasing online is Not Say#
+#We see more than expected Women who do not tell us their income are not purchasing online #
+#
+# =============================================================#
+#     Area 6: Computing Platform vs. Household Income#
+# =============================================================#
+#
+mosaicplot(Major.Occupation~Primary.Computing.Platform,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")#
+#theres a ton of information we can write about this one.#
+#=================================================================#         Code Comments and Explanantions#
+#=================================================================#
+#1 Demographics:#
+#Set window for 4 graphs for easy exploration of different demographic variables.#
+#Determine the missingness of race.#
+#Create a pie chart for race with missingness accounted for.#
+#Create a pie chart for gender.#
+#Determine missingness in age.#
+#Create a histogram for age#
+#
+#2 Age vs place of internet access:#
+#
+#lines 1-3 determine the missingness of the variable age.#
+#Line 5 renames primary place of access for more efficient recall.#
+#Line 6 does this for age#
+#Plot the density with bandwith =4.74 for age vs primary place of internet access.#
+#Add 7 additional lines, one for each categorical distribution of place of access.#
+#Input legend.#
+#
+#3 Major Occupation vs Place of internet access:#
+#
+#Create a titled, labeled and shaded mosaic plot of Major Occupation vs place of #internet access.#
+#
+#4 house hold income vs primary place of internet access:#
+#
+#Table Income and place of access to make recall efficient in the mosaic plot line.#
+#Create a matrix to be used in the row and column names.#
+#Create row and column names using the matrix previously created.#
+#Create mosaic plot, with shading and main,x,y labels.#
+#
+#5 Income, gender, online purchase?:#
+#
+#First find out which responses are missing (“Don’t know” and “Don’t Know”)#
+#Create new variable and set these missing as NA.#
+#Catalog missingness in web ordering by gender. #
+#Create a matrix for gender which web ordering is missing(=Don’t know)#
+#Repeat this step for missingness in web ordering by Household income.#
+#Rename each new missingness variable for efficient recall.#
+#Create a titled and labeled mosaic plot with the 3 missingness variables and shading.#
+#
+#6 Computing platform vs Household Income:
+names(data)
+"Actual.Time"
+Actual.Time
+barplot(Major.Occupation~Primary.Computing.Platform)
+PosterCode #
+#GroupNorthEast #
+#
+data = read.table("northeast.txt")#
+names(data)#
+attach(data)#
+library(vcd)#
+#
+# =============================================================#
+#						Area 1: Demographics #
+# =============================================================#
+# include sample size, code sample percentage #
+#
+par(mfrow=c(2,2))#
+#
+# ---------------------------Race------------------------------#
+#
+length(data[,1])#
+race.missing = as.matrix(Race)#
+race.missing#
+pie(table(race.missing), col=c(1,2,3,4,5,6,7), main="Distribution of Race via Pie Chart\n N=546")#
+#
+# -----------------------Gender (Pie Chart)-------------------#
+#
+table(Gender)#
+pie(table(Gender), col=c("pink", "blue"), main="Distribution of Gender via Pie Chart\nN=546")#
+#
+# -----------------------#Age (Histogram)---------------------#
+#
+age.missing=as.matrix(Age)#
+age.missing[which(age.missing == "Not Say!")] = NA#
+age.missing=as.numeric(age.missing)#
+age.missing=na.omit(age.missing)#
+#
+hist(age.missing, xlab="Age", breaks=c(0,10,20,30,40,50,60,70,80,90), ylab="Counts", main="Age Distribution of Northeast Surveyors",col=3)#
+#
+# =============================================================#
+#		Area2: Age & Where you use the Internet (ie: Home) #
+# =============================================================#
+#
+##
+#Question2#
+#Where you mainly use internet and age #
+#hypothesis: They are not independent#
+#compare modes #
+#we will edit the legend and colors and line style to reflect the specificity of the type (primarily vs. not primarily)#
+#not compact #
+#this graph shows not they are independent because the modes are signficantly different #
+# NOTE that friend has been removed because of only having 1 observation#
+# Age "Not Say!" removed.#
+#
+ppwww.cond = as.matrix(Primary.Place.of.WWW.Access)#
+ppwww.cond[Primary.Place.of.WWW.Access == "Distributed"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Friend"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily home"] = "Home"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily work"] = "Work"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Public"] = "Other"#
+#
+age.missing = as.matrix(Age)#
+length(age.missing)#
+age.missing = as.numeric(age.missing)#
+indices = which(!age.missing == "Not Say!")#
+ppww = ppwww.cond[indices]#
+age.missing = age.missing[indices]#
+plot(density(age.missing[ppww =="Home"]), col = "#0000ffcc", ylim=c(0,.125), lwd=2, main="Age vs Primary Place of WWW Access\nN=530 Bandwidth = 4.714", xlab="Age", xlim=c(0,90))#
+lines(density(age.missing[ppww  == "Other"]), col = "#00ff00ee", lwd=2)#
+lines(density(age.missing[ppww  == "Work"]), col = "#ff0000cc", lwd=2)#
+lines(density(age.missing[ppww  == "School"]), col = "#9D06FFcc", lwd=2)#
+legend("topright", c("Home","Other","Work", "School" ),col=c("#0000ffcc", "#00ff00ee", "#ff0000cc", "#9D06FFcc") , lwd=2)#
+#
+# =============================================================#
+#	  Area 3: Major Occupation & Where you use the Internet#
+# =============================================================#
+#
+ppwww.cond = as.matrix(Primary.Place.of.WWW.Access)#
+ppwww.cond[Primary.Place.of.WWW.Access == "Distributed"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Friend"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily home"] = "Home"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily work"] = "Work"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Public"] = "Other"#
+#
+#Where you use the internet and occupation are not independent #
+mosaicplot(Major.Occupation~ppwww.cond, shade=T, las=2, main="Major Occupation vs. Primary Place of WWW Access\nH0 = Major Occupation independent of Primary Place of WWW Access")#
+#clearly not independent #
+#lots of residuals #
+#sparseness in variable 2 (primary place of access) #
+#ragged edges #
+#people who dont classify in one of the major occupations (aka other)use their primary place of internet usage at home#
+#professional category does not deviate from the expectations #
+#other may refer to not in an office; blue collar which therefore reflects that they would not necessarily using internet access from work. We see a lot more internet usage at home than at work if they were independent. #
+#fix: Income columns in order #
+#
+# =============================================================#
+# Area 4: Household Income vs. Primary Place of Internet Access#
+# =============================================================#
+#
+hiwww = table(Household.Income,Primary.Place.of.WWW.Access)#
+hiwww = matrix(rbind(hiwww[7,],hiwww[9,], hiwww[1:6,], hiwww[8,]), ncol=9)#
+l = levels(Household.Income)#
+rownames(hiwww) = c(l[7],l[9], l[1:6], l[8])#
+colnames(hiwww) = levels(Primary.Place.of.WWW.Access)#
+mosaicplot(hiwww, shade=T, main="Household Income vs. Primary Place of Internet Access", xlab= "Household Income in Thousands of Dollars", ylab="Primary Place of Internet Access", las=2)#
+#for some reason I cannot find any information we wrote about this besides whats in the email i sent #
+#
+hi.cond = as.matrix(Household.Income)#
+hi.cond[Household.Income ==  "Under $10"] = "< $30"#
+hi.cond[Household.Income == "$10-19"] = "< $30"#
+hi.cond[Household.Income == "$20-29"] = "< $30"#
+hi.cond[Household.Income == "$30-39"] = "$30-74"#
+hi.cond[Household.Income == "$40-49"] = "$30-74"#
+hi.cond[Household.Income == "$50-74"] = "$30-74"#
+hi.cond[Household.Income == "$75-99"] = "> $74"#
+hi.cond[Household.Income == "Over $100"] = "> $74"#
+#
+ppwww.cond = as.matrix(Primary.Place.of.WWW.Access)#
+ppwww.cond[Primary.Place.of.WWW.Access == "Distributed"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Friend"] = "Other"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily home"] = "Home"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Primarily work"] = "Work"#
+ppwww.cond[Primary.Place.of.WWW.Access == "Public"] = "Other"#
+#
+counts = table(hi.cond,ppwww.cond)#
+counts = rbind(counts[4,], counts[1,], counts[3,], counts[2,])#
+counts = cbind(counts[,3], counts[,1], counts[,4], counts[,2])#
+rownames(counts) =  c("Not Say", "< $30", "$30-74", "> $74")#
+colnames(counts) =  c("School", "Home", "Work", "Other")#
+#
+barplot(t(counts), beside=T, col=rainbow(4), main="Household Income vs Primary Place of WWW Access", ylim=c(0,160), xlab="Household Income", ylab="Frequency")#
+legend("topright", colnames(counts), col=rainbow(4), lwd=2)#
+#
+# =============================================================#
+# Area 5: Household Income/Gender/Whether Individuals Purchase Online#
+# =============================================================#
+#
+Web.Ordering#
+which(Web.Ordering=="Don't know")#
+which(Web.Ordering=="Dont know")#
+#150, 344, 418, 146, 275, 375#
+#
+WO.missing=Web.Ordering#
+WO.missing[which(Web.Ordering=="Don't know")]=NA#
+WO.missing[which(Web.Ordering=="Dont know")]=NA#
+WO.missing=as.matrix(WO.missing)#
+WO.missing1=na.omit(WO.missing)#
+#
+Gender.missing=Gender#
+Gender.missing[which(Web.Ordering=="Don't know")]=NA#
+Gender.missing[which(Web.Ordering=="Dont know")]=NA#
+Gender.missing=as.matrix(Gender.missing)#
+Gender.missing1=na.omit(Gender.missing)#
+#
+Household.Income.missing=Household.Income#
+Household.Income.missing[which(Web.Ordering=="Don't know")]=NA#
+Household.Income.missing[which(Web.Ordering=="Dont know")]=NA#
+Household.Income.missing=as.matrix(Household.Income.missing)#
+Household.Income.missing1=na.omit(Household.Income.missing)#
+#
+HHIM=Household.Income.missing1#
+GM1=Gender.missing1#
+WOM1=WO.missing1#
+#
+mosaicplot(WOM1~HHIM+GM1, shade=T, xlab="Variable 1: Purchasing Online, Variable 2: Gender", ylab= "Household Income in Thousands", main="Gender and Household Income conditioned on Online Purchasing")#
+#distribution of males and females are different for purchasing online and not purchasing online#
+#Males who make over $100K are purchasing more than expected observations. #
+#More females who make less than $10K are not purchasing more than expected observations; Less males are buying online when they make less than $10K --> Income and Gender does influence online purchasing #
+#Largest Bracket for Household Income Not Purchasing online is Not Say#
+#We see more than expected Women who do not tell us their income are not purchasing online #
+#
+# =============================================================#
+#     Area 6: Computing Platform vs. Household Income#
+# =============================================================#
+#
+plat.cond = as.matrix(Primary.Computing.Platform)#
+plat.cond[Primary.Computing.Platform ==  " "] = NA#
+plat.nas = which(is.na(plat.cond))#
+plat.cond[Primary.Computing.Platform ==  "PC Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Don't Know"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "DOS"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "OS2"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Win95"] = "Windows"#
+#
+mosaicplot(Major.Occupation~plat.cond,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")#
+#theres a ton of information we can write about this one.#
+#
+# =============================================================#
+# Area 7: Most Important Issue Facing the Internet vs Time on Internet#
+# =============================================================#
+#
+source("rose.R")#
+#
+issues = as.matrix(Most.Import.Issue.Facing.the.Internet)#
+issues[Most.Import.Issue.Facing.the.Internet == "Culture"] = "Other" #
+issues[Most.Import.Issue.Facing.the.Internet == "Don't Know"] = "Other" #
+issues[Most.Import.Issue.Facing.the.Internet == "Dont Know"] = "Other"#
+issues[Most.Import.Issue.Facing.the.Internet == "Language"] = "Other"  #
+#
+table(issues, Years.on.Internet)#
+#
+library(vcd)#
+par(mfrow=c(2,3))#
+rose(table(issues[Years.on.Internet == "Under 6 mo"]), shrink=4, main="Under 6 mo", labels=rep("", 6))#
+rose(table(issues[Years.on.Internet == "6-12 mo"]), shrink=4, main="6-12 mo", labels=rep("", 6))#
+rose(table(issues[Years.on.Internet == "1-3 yr"]), shrink=4, main="1-3 yr", labels=rep("", 6))#
+rose(table(issues[Years.on.Internet == "4-6 yr"]), shrink=4, main="4-6 yr", labels=rep("", 6))#
+rose(table(issues[Years.on.Internet == "Over 7 yr"]), shrink=4, main="Over 7 yr", labels=rep("", 6))#
+#
+grid_legend(.85,.25, pch=rep(16, 6), col=rainbow(6), labels=rownames(table(issues, Years.on.Internet)), title="Issue")#
+#=================================================================#         Code Comments and Explanantions#
+#=================================================================#
+#1 Demographics:#
+#Set window for 4 graphs for easy exploration of different demographic variables.#
+#Determine the missingness of race.#
+#Create a pie chart for race with missingness accounted for.#
+#Create a pie chart for gender.#
+#Determine missingness in age.#
+#Create a histogram for age#
+#
+#2 Age vs place of internet access:#
+#
+#lines 1-3 determine the missingness of the variable age.#
+#Line 5 renames primary place of access for more efficient recall.#
+#Line 6 does this for age#
+#Plot the density with bandwith =4.74 for age vs primary place of internet access.#
+#Add 7 additional lines, one for each categorical distribution of place of access.#
+#Input legend.#
+#
+#3 Major Occupation vs Place of internet access:#
+#
+#Create a titled, labeled and shaded mosaic plot of Major Occupation vs place of #internet access.#
+#
+#4 house hold income vs primary place of internet access:#
+#
+#Table Income and place of access to make recall efficient in the mosaic plot line.#
+#Create a matrix to be used in the row and column names.#
+#Create row and column names using the matrix previously created.#
+#Create mosaic plot, with shading and main,x,y labels.#
+#
+#5 Income, gender, online purchase?:#
+#
+#First find out which responses are missing (“Don’t know” and “Don’t Know”)#
+#Create new variable and set these missing as NA.#
+#Catalog missingness in web ordering by gender. #
+#Create a matrix for gender which web ordering is missing(=Don’t know)#
+#Repeat this step for missingness in web ordering by Household income.#
+#Rename each new missingness variable for efficient recall.#
+#Create a titled and labeled mosaic plot with the 3 missingness variables and shading.#
+#
+#6 Computing platform vs Household Income:#
+#add legend#
+#don't need a legend. axis describes the information.#
+#
+Actual.Time.noother = as.matrix(Actual.Time)#
+Actual.Time.noother[Actual.Time == "Other"] = NA#
+Actual.Time.noother = na.omit(Actual.Time.noother)
+plat.cond = as.matrix(Primary.Computing.Platform)
+plat.cond[Primary.Computing.Platform ==  " "] = NA
+plat.nas = which(is.na(plat.cond))
+plat.nas
+plat.cond[Primary.Computing.Platform ==  ""] = NA
+plat.nas = which(is.na(plat.cond))
+plat.nas
+occ = Major.Occupation[plat.not.nas]
+plat.not.nas = which(!is.na(plat.cond))
+occ = Major.Occupation[plat.not.nas]
+mosaicplot(occ~plat.cond,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")
+plat.cond = as.matrix(Primary.Computing.Platform)#
+plat.cond[Primary.Computing.Platform ==  ""] = NA#
+plat.not.nas = which(!is.na(plat.cond))#
+plat.cond = na.omit(plat.cond)#
+plat.cond[Primary.Computing.Platform ==  "PC Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Don't Know"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "DOS"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "OS2"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Win95"] = "Windows"
+occ = Major.Occupation[plat.not.nas]
+mosaicplot(occ~plat.cond,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")
+length(plat.cond)
+length(occ)
+plat.cond = na.omit(plat.cond)
+plat.cond
+length(plat.cond)
+plat.cond = as.matrix(Primary.Computing.Platform)
+length(which(Primary.Computing.Platform
+)
+)
+Primary.Computing.Platform == ""
+plat.cond[Primary.Computing.Platform ==  ""] = NA
+plat.cond
+length(is.na(plat.cond)))
+length(is.na(plat.cond))
+length(is.na(plat.cond))
+is.na(plat.cond)
+which(is.na(plat.cond))
+length(which(is.na(plat.cond)))
+which(!is.na(plat.cond))
+Primary.Computing.Platform[NA]
+plat.cond = as.matrix(Primary.Computing.Platform)
+plat.cond[Primary.Computing.Platform ==  ""] = NA
+plat.not.nas = which(!is.na(plat.cond))
+plat.cond = na.omit(plat.cond)
+plat.cond = as.matrix(Primary.Computing.Platform)
+plat.cond[Primary.Computing.Platform ==  ""] = NA
+plat.not.nas = which(!is.na(plat.cond))
+plat.cond[Primary.Computing.Platform ==  "PC Unix"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "Don't Know"] = "Other"
+plat.cond = as.matrix(Primary.Computing.Platform)
+plat.cond[Primary.Computing.Platform ==  ""] = NA
+plat.not.nas = which(!is.na(plat.cond))
+plat.cond[Primary.Computing.Platform ==  "PC Unix"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "Don't Know"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "DOS"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "OS2"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "Unix"] = "Other"
+plat.cond[Primary.Computing.Platform ==  "Win95"] = "Windows"
+plat.cond = na.omit(plat.cond)
+occ = Major.Occupation[plat.not.nas]
+mosaicplot(occ~plat.cond,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")
+table(occ, plat.cond)
+PosterCode #
+#GroupNorthEast #
+#
+data = read.table("northeast.txt")#
+names(data)#
+attach(data)#
+library(vcd)#
+# =============================================================#
+#     Area 6: Computing Platform vs. Household Income#
+# =============================================================#
+#
+plat.cond = as.matrix(Primary.Computing.Platform)#
+plat.cond[Primary.Computing.Platform ==  ""] = NA#
+plat.not.nas = which(!is.na(plat.cond))#
+#
+plat.cond[Primary.Computing.Platform ==  "PC Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Don't Know"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "DOS"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "OS2"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Unix"] = "Other"#
+plat.cond[Primary.Computing.Platform ==  "Win95"] = "Windows"#
+plat.cond = na.omit(plat.cond)#
+#
+occ = Major.Occupation[plat.not.nas]#
+#
+mosaicplot(occ~plat.cond,shade=T, las=2, xlab="Major Occupation", ylab="Primary Computing Platform", main="Major Occupation versus Primary Computing Platform")#
+#theres a ton of information we can write about this one.
+data = read.table("data.txt", sep=",")
+data = read.table("data.txt", sep=",")#
+names(data)#
+attach(data)#
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n")
+data = read.table("data.txt", sep=",")#
+names(data)#
+attach(data)#
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n")
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055")#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+par(mfrow=c(2,2))
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055")#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+par(mfrow=c(2,1))
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055")#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055")#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+par(mfrow=c(1,2))#
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055")#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+par(mfrow=c(1,2))#
+plot(V2,type="b",xlab="Time of the Day",ylab="Line Length",main="CMU Package Pickup Line Length",xaxt="n",col = "#00000055", pch=16)#
+axis(1,at=seq(25,25+(3600*6),3600),labels=c("11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"))
+pos<-which(V2=="0" & V3=="1")#
+postimes<-V6[pos]#
+postimes.new<-postimes#
+for(i in 1:length(postimes)) {#
+new.value<-postimes[i]/1000#
+postimes.new[i]<-new.value#
+}
+hist(postimes.new,xlab="Point of Service Time (in Seconds)",main="Point of Service Time Histogram",breaks=seq(0,60,length=60),ylim=c(0,300))
+data = read.table('gps_test.txt')
+data
+attach(data)
+attach(data)
+data = read.table('gps_test.txt', sep=",")
+data = read.table('gps_test.txt', sep=",", skip=1)
+daa
+data
+attach(data)
+data[1]
+data[1,]
+hist(V11)
+plot(ts(V11))
+plot(V1,V2)
+plot(V1[V1 > 20], V2[V2 > 20])
+plot(V1[V1 > 20], V2[V1 > 20])
+plot(V2[V1 > 20], V1[V1 > 20], )
+plot(V2[V1 > 20], V1[V1 > 20] )
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+index
+data[100]
+data[100,]
+data[101,]
+data[50,]
+plot(ts(V7))
+hist(V7)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, res=10)
+png(file="plot.png",width=1000,height=1000,res=300)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, res=10)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+dev.off()
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, res=50)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, res=50)
+png(file="plot.png",width=1000,height=1000,res=100)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+dev.off()
+lines(V2[V1 > 20], V1[V1 > 20] , pch=16)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+lines(V2[V1 > 20], V1[V1 > 20] , pch=16)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, cex=.2)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, cex=.3)
+plot(V2[V1 > 20], V1[V1 > 20] , pch=16, cex=.3, col = "red")
+lines(V2[V1 > 20], V1[V1 > 20] , pch=16)
